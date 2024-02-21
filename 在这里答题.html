@@ -14,6 +14,16 @@
             list.set(i, i)
         }
         console.log('有10000个数据，需要顺序的批量提交到服务器', list.size)
+         async function submitData(list) {
+          for (const item of list) {
+            const [_, value] = item;
+            await axios.post({
+              url: "/",
+              data: value,
+            });
+          }
+        }
+        submitData(list);
     }
     {
 
