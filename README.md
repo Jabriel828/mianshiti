@@ -1,7 +1,6 @@
 # 面试题
 
-![alt text](image-1.png)
-
+![alt text](image.png)
 
 答题完成后，贴代码即可（请截图）...
 请勿使用GTP回答！
