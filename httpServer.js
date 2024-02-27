@@ -7,6 +7,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+// 可以更改服务器
 app.post('/', (req, res, next) => {
     const {body: {i}} = req
     console.log(`你发来的是${i}`);
